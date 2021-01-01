@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "ljm",
+      "type": "com.luca.lianxi.entity.Tesqt",
+      "sourceType": "com.luca.lianxi.entity.Tesqt"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ljm.one",
+      "type": "java.lang.String",
+      "sourceType": "com.luca.lianxi.entity.Tesqt"
+    },
+    {
+      "name": "ljm.two",
+      "type": "java.lang.String",
+      "sourceType": "com.luca.lianxi.entity.Tesqt"
+    }
+  ],
+  "hints": []
+}

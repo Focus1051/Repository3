@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <!-- Stylesheets -->
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/responsive.css}" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+
+    <!--<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">-->
+
+    <link rel="shortcut icon" th:href="@{images/favicon.png}" type="image/x-icon">
+    <link rel="icon" th:href="@{images/favicon.png}" type="image/x-icon">
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!--[if lt IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script type="text/javascript" th:src="@{js/respond.js}"></script><![endif]-->
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="spinner_wrap">
+                <div class="spinner"></div>
+            </div>
+        </div>
+
+        <!-- Main Header-->
+        <header class="main-header header-style-one">
+            <div class="header-top">
+                <ul>
+                    <li><img th:src="@{/images/lll.png}" width="420px" height="80px" /></i>
+                    </li>
+
+                </ul>
+            </div>
+            <!--Header-Upper-->
+            <div class="header-upper">
+
+                <div class="auto-container">
+                    <div class="header-outer">
+                        <!-- <div class="logo-box">
+                        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                    </div> -->
+
+                        <div class="nav-outer clearfix auto-container">
+
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-lg">
+                                <div class="navbar-header">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                </div>
+                                <div class="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+
+
+
+                                        <li class="current"><a href="#">首页</a>
+
+                                        </li>
+                                        <li class="dropdown"><a href="#">关于王力宏</a>
+                                            <ul>
+                                                <li><a href="公司简介.html">公司简介</a></li>
+                                                <li><a href="领导致辞.html">领导致辞</a></li>
+                                                <li><a href="组织机构.html">组织机构</a></li>
+                                                <li><a href="企业文化.html">企业文化</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="#">新闻中心</a>
+                                            <ul>
+                                                <li><a href="信息简讯.html">信息简讯</a></li>
+                                                <li><a href="视频中心.html">视频中心</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a href="信息公告.html">信息公告</a>
+
+                                        </li>
+                                        <li class="dropdown"><a href="#">项目概况</a>
+                                            <ul>
+                                                <li><a href="项目定位.html">项目定位</a></li>
+                                                <li><a href="项目产业模式.html">项目产业模式</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="">项目建设</a>
+                                            <ul>
+                                                <li><a href="建设项目.html">建设项目</a></li>
+                                                <li><a href="经营项目.html">经营项目</a></li>
+                                                <li><a href="产业管理项目.html">产业管理项目</a></li>
+                                                <li><a href="度假区.html">红格国际运动康养·温泉度假区</a></li>
+                                            </ul>
+
+
+                                        </li>
+
+                                        <li class="dropdown"><a href="#">联系我们</a>
+                                            <ul>
+                                                <li><a href="联系方式.html">联系方式</a></li>
+                                                <li><a href="招聘信息.html"> 招聘信息</a></li>
+                                            </ul>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Header Upper-->
+
+            <!--Sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="clearfix">
+                        <div class="right-col indexLeft">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-lg">
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+
+
+
+                                        <li class="current"><a href="#">首页</a>
+
+                                        </li>
+                                        <li class="dropdown"><a href="#">关于我们</a>
+                                            <ul>
+                                                <li><a href="公司简介.html">公司简介</a></li>
+                                                <li><a href="领导致辞.html">领导致辞</a></li>
+                                                <li><a href="组织机构.html">组织机构</a></li>
+                                                <li><a href="企业文化.html">企业文化</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="#">新闻中心</a>
+                                            <ul>
+                                                <li><a href="信息简讯.html">信息简讯</a></li>
+                                                <li><a href="视频中心.html">视频中心</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=""><a href="信息公告.html">信息公告</a>
+
+                                        </li>
+                                        <li class="dropdown"><a href="#">项目概况</a>
+                                            <ul>
+                                                <li><a href="项目定位.html">项目定位</a></li>
+                                                <li><a href="项目产业模式.html">项目产业模式</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="">项目建设</a>
+                                            <ul>
+                                                <li><a href="建设项目.html">建设项目</a></li>
+                                                <li><a href="经营项目.html">经营项目</a></li>
+                                                <li><a href="产业管理项目.html">产业管理项目</a></li>
+                                                <li><a href="度假区.html">红格国际运动康养·温泉度假区</a></li>
+                                            </ul>
+
+
+                                        </li>
+
+                                        <li class="dropdown"><a href="#">联系我们</a>
+                                            <ul>
+                                                <li><a href="联系方式.html">联系方式</a></li>
+                                                <li><a href="招聘信息.html"> 招聘信息</a></li>
+                                            </ul>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </nav>
+                            <!-- Main Menu End-->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--End Sticky Header-->
+
+        </header>
+        <!--End Main Header -->
+
+        <!--Main Slider-->
+        <section class="main-slider ">
+
+            <div class="main-slider-carousel owl-carousel owl-theme">
+
+                <div class="slide" style="background:url(images/main-slider/image-1.jpg) no-repeat 0/100% 565px">
+
+                </div>
+                <div class="slide" style="background:url(images/main-slider/image-2.jpg) no-repeat 0/100% 565px">
+                    <div class="auto-container">
+                        <div class="content text-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background:url(images/main-slider/image-3.jpg) no-repeat 0/100% 565px">
+                    <div class="auto-container">
+                        <div class="content text-center">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="services-section sp-four" style="background-image:url(images/background/bg-1.jpg)">
+            <div class="auto-container">
+                <!-- Section Title -->
+                <div class="sec-title text-center light">
+
+                    <h1 class="newh1 about">
+                        <span>新闻</span>中心
+                        <span class="newAbout" style="background-color:rgb(63,133,149)">NEWS CENTER</span>
+                    </h1>
+                </div>
+                <div class="wrapper-box">
+                    <div class="row">
+                        <!-- Service Block One -->
+                        <div class="col-lg-4 service-block-one">
+                            <div class="inner-box imghvr-blocks-rotate-in-left">
+                                <div class="hover-anim"></div>
+                                <div class="content-box">
+                                    <div class="icon-box"></div>
+                                    <h4>攀枝花新闻标题攀枝花新闻标题攀枝花新闻标题</h4>
+                                    <div class="text">攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介攀枝花攀枝花攀 攀枝花攀枝花攀枝花简介枝花简介攀枝花 攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介 攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介 攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介攀枝花攀枝花简介 </div>
+                                    <div class="link-btn"><a href="#" class="theme-btn btn-style-three">Read More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service Block One -->
+                        <div class="col-lg-4 service-block-one">
+                            <div class="inner-box imghvr-blocks-rotate-in-left">
+                                <div class="hover-anim"></div>
+                                <div class="content-box">
+                                    <div class="icon-box"></div>
+                                    <h4>攀枝花</h4>
+                                    <div class="text">攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介攀枝花攀枝花攀 攀枝花攀枝花攀枝花简介枝花简介攀枝花 攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介 攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介 攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介攀枝花 </div>
+                                    <div class="link-btn"><a href="#" class="theme-btn btn-style-three">Read More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service Block One -->
+                        <div class="col-lg-4 service-block-one">
+                            <div class="inner-box imghvr-blocks-rotate-in-left">
+                                <div class="hover-anim"></div>
+                                <div class="content-box">
+                                    <div class="icon-box"></div>
+                                    <h4>攀枝花</h4>
+                                    <div class="text">攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介攀枝花攀枝花攀 攀枝花攀枝花攀枝花简介枝花简介攀枝花 攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介 攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介 攀枝花攀枝花攀枝花简介攀枝花攀枝花攀枝花简介攀枝花
+                                    </div>
+                                    <div class="link-btn"><a href="#" class="theme-btn btn-style-three">Read More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Features Section Two -->
+        <section class="features-section-two sp-four">
+            <div class="auto-container">
+                <div class="sec-title text-center light">
+                    <h1 class="about  newh1">
+                        <span>关于</span>我们
+                        <span class="newAbout">ABOUT US</span>
+                    </h1>
+                </div>
+                <div class="feature-outer">
+                    <div class="row">
+                        <div class="col-lg-6 left-column">
+                            <div class="image"><img src="@{/images/image-4.png}" alt=""></div>
+                            <div class="feature-block-two">
+                                <div class="inner-box inner-box2">
+                                    <div class="text">项目建设总投资约300亿元，涉及市政道路、桥梁（隧道）、给排水、供气、供电、通讯、景观绿化、市政公园、路灯、公交场站、高压 线电力通道等基础设施建设以及幼儿园、小学、中学、医疗卫生设施、社区卫生服务中心、体育及文化设施、派出所、农贸市场、街道办事处、公共停车场等公共配套设施建设。 红格 国际运动康养·温泉度假区项目计划在3年内投资约38亿元完成市政基础设施建设，5年内投资约55亿元完成市政基础设施及公共配套服务设施建设，8年内完成约171亿元的产业导入。项
+                                        目建成后将形成300万人次的年游客接待能力，产业发展预计引进新增人口8万人，可直接带动就业5万人，将向中国和世界展现一个功能齐全、产业兴旺、风景如画、宜旅宜居、充满活力 、魅力时尚的运动康养新红格。 作为红格特色小镇项目的实施主体，攀枝花太阳谷投资管理有限公司力求通过 以资产运营为中心，以市场需求为依据，灵活运用各种经济手段，最大限度整合各种资源，努力打造出最大效益
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 right-column">
+                            <div class="feature-block-three">
+                                <!-- Section Title -->
+                                <!-- <div class="sec-title">
+                                
+                              <br>
+                                <div class="sub-title">  攀枝花太阳谷投资管理有限公司</div>
+                            </div> -->
+                                <div class="text">
+                                    <p>2016年10月，住建部公布了首批127个中国特色小镇名单，红格镇榜上有名，成为攀枝花市首个国家级的特色小镇。根据攀枝花市委、 市政府关于红格特色小镇建设的要求，攀枝花太阳谷投资管理有限公司于2017年8月29日正式成立，公司作为红格特色小镇整体建设运营项目的 实施主体，对24平方公里红格特色小镇进行总体开发建设。 攀枝花太阳谷投资管理有限公司注册资本3亿元人民币，属国资股份制企业，分别由攀枝花城 市投资建设（集团）有限公司占股70%、盐边发展（集团）有限责任公司占股30%。公司共有员工28人，其中党员9人，有专业职称14人。公司内设综合办公室、
+                                        合同管理部、项目管理部、财务部等4个工作部门，下设攀枝花合盛工程建设开发有限公司、攀枝花合盛农业开发建设有限公司等2个全资子公司，以及攀枝花川投 宏格实业有限公司1个参股公司。 攀枝花太阳谷投资管理有限公司经营范围包括：对城市市政（含城镇及乡村）基础设施、能源、交通、水务、资源开发、健康养老 服务、现代农业重点建设项目的投资、融资（不得从事非法集资、吸收公众资金等金融活动）、管理及咨询服务，对旅游业、酒店业、商业、建筑业的投资（不得从事非法
+                                        集资、吸收公众资金等金融活动）；企业管理服务；工程项目管理、办理政府委托的其他资金业务。房地产开发（凭资质证从事经营活动）；土地整理、开发；销售：机械设 备、电器设备、仪器仪表、金属材料、建筑材料（依法须经批准的项目，经相关部门批准后方可开展经营活动）。 攀枝花太阳谷投资管理有限公司重点打造的红格国际运动康养 ·温泉度假区项目，规划面积24平方公里，
+                                    </p>
+                                </div>
+                                <div class="video-box">
+                                    <img src="@{/images/resource/image-5.jpg}" alt="">
+                                    <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&t=28s" class="overlay-link lightbox-image video-fancybox border-anim-left">
+                                        <span class="border-anim-right"></span><span class="flaticon-play-button"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <!--Widgets Section-->
+            <div class="widgets-section" style="background-image:url(images/background/bg-1.jpg)">
+                <div class="auto-container">
+                    <div class="row">
+                        <!--Big Column-->
+                        <div class="big-column col-lg-12">
+                            <div class="row f-foot">
+                                <!--Footer Column-->
+                                <div class="footer-column col-lg-6 col-md-8">
+                                    <div class="footer-widget about-widget">
+                                        <ul class="f-ul">
+                                            <li>
+                                                <a href="">建设项目</a>
+                                            </li>
+                                            <li>
+                                                <a href="">经营项目</a>
+                                            </li>
+                                            <li>
+                                                <a href="">产业管理项目</a>
+                                            </li>
+                                            <li>
+                                                <a href="">红格国际运动康养·温泉度假区
+                                                    </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!--Footer Column-->
+                                <div class="footer-column footer-column2 col-lg-3 col-md-4">
+                                    <div class="footer-widget links-widget">
+                                        <div class="widget-content">
+                                            <ul class="list clearfix">
+
+                                                <li><a href="#">电话：0812—8772246</a></li>
+                                                <li><a href="#">邮箱：3532580050@qq.com</a></li>
+                                                <li><a href="#">网址：www.pzhtyggs.com</a></li>
+                                                <li><a href="#">地址：盐边县红格镇红山大道5号</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="footer-column col-lg-2 col-md-4">
+                                    <div class="footer-widget links-widget">
+                                        <div class="widget-content">
+                                            <img class="f-img" src="@{/images/erweima.png}" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                        <!--Big Column-->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">©ICP备案编号：<a href="http://www.beianbeian.com/">蜀ICP备20005405号-1</a></div>
+
+        </footer>
+        <!-- End Main Footer -->
+
+    </div>
+    <!--End pagewrapper-->
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fas fa-angle-up"></span></div>
+    <script th:src="@{/js/jquery.js}"></script>
+    <script th:src="@{/js/popper.min.js}"></script>
+    <script th:src="@{/js/pagenav.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/jquery.paroller.min.js}"></script>
+    <script th:src="@{/js/jquery.fancybox.js}"></script>
+    <script th:src="@{/js/appear.js}"></script>
+    <script th:src="@{/js/swiper.min.js}"></script>
+    <script th:src="@{/js/owl.js}"></script>
+    <script th:src="@{/js/wow.js}"></script>
+    <script th:src="@{/js/element-in-view.js}"></script>
+    <script th:src="@{/js/timeline.min.js}"></script>
+    <script th:src="@{/js/TweenMax.min.js}"></script>
+    <script th:src="@{/js/TweenMax.min.js}"></script>
+    <script th:src="@{/js/script.js}"></script>
+
+    <!--Google Map APi Key-->
+    <script src="http://ditu.google.cn/maps/api/js?key=AIzaSyBk25E4mNfVIEt3tNl3K1HwNZVruVoFBlA"></script>
+    <script th:src="@{js/map-script.js}"></script>
+    <!--End Google Map APi-->
+
+</body>
+
+</html>

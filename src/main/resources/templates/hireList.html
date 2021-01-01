@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 这段代码让ie的文档模式是最新的 -->
+    <title>攀枝花城投</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style1.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/media.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/template.css}" />
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="dabox">
+            <ul class="h_top clearfloat">
+                <li class="f_l h_topli1">
+                </li>
+                <li class="f_r h_topli2">
+                </li>
+            </ul>
+        </div>
+                <div class="w100 h_text">
+            <div class="dabox clearfloat">
+                <ul class="clearfloat h_ultext h_more">
+                    <li class="fldb"><a href="${pageContext.request.contextPath}/">首页</a></li>
+                    <li class="fldb p-r h_li">
+                        <a href="${pageContext.request.contextPath}/aboutUs/introduction"> 关于我们</a>
+
+                        <div class="h_add"></div>
+                        <ul class="h_nav ">
+                            <li><a href="${pageContext.request.contextPath}/aboutUs/introduction">公司简介</a></li>
+                            <li><a href="${pageContext.request.contextPath}/aboutUs/address">领导致辞</a></li>
+                            <li><a href="${pageContext.request.contextPath}/aboutUs/mechanism">组织机构</a></li>
+                            <li><a href="${pageContext.request.contextPath}/aboutUs/culture">企业文化</a></li>
+                            <li><a href="${pageContext.request.contextPath}/aboutUs/video">视频中心</a></li>
+                        </ul>
+                    </li>
+                    <li class="fldb">
+                        <a href="${pageContext.request.contextPath}/message/main">新闻中心</a></li>
+                    <li class="fldb p-r h_li">
+                        <a href="${pageContext.request.contextPath}/Business/selectbusiness1">业务模块</a>
+
+                        <div class="h_add"></div>
+                        <ul class="h_nav h_nav2">
+                                                    <li><a href="${pageContext.request.contextPath}/Business/selectbusiness99">产业投资</a></li>
+                            <li><a href="${pageContext.request.contextPath}/Business/selectbusiness1">融资投资</a></li>
+                            <li><a href="${pageContext.request.contextPath}/Business/selectbusiness2">项目建设</a></li>
+                            <li><a href="${pageContext.request.contextPath}/Business/selectbusiness3">资产管理</a></li>
+                            <li><a href="${pageContext.request.contextPath}/Business/selectbusiness4">成员企业</a></li>
+                        </ul>
+                    </li>
+                    <li class="fldb"><a href="${pageContext.request.contextPath}/message2/pagingMessageNum.action">信息公告</a></li>
+                    <li class="fldb p-r h_li">
+                        <a href="${pageContext.request.contextPath}/contactUs/selectUs">加入我们</a>
+
+                        <div class="h_add"></div>
+                        <ul class="h_nav h_nav3">
+                            <li><a href="${pageContext.request.contextPath}/contactUs/selectUs1">人才战略</a></li>
+                            <li><a href="${pageContext.request.contextPath}/message2/pagingMessageNum7.action">招聘信息</a></li>
+                        </ul>
+                    </li>
+                    <li class="fldb">
+                    <a href="${pageContext.request.contextPath}/message2/tiao16">联系我们</a></li>
+                </ul>
+                <div class="h_inp clearfloat">
+                    <input class="f_l" type="text">
+                    <button class="f_r">搜索</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="content">
+        <div class="c-topimg c6">
+
+        </div>
+        <div class="clearfloat dabox">
+            <ul class="c-ul2">
+                <li class="c-about2"><b>联系我们  &nbsp;Join US</b></li>
+                <li class="c-about3">
+                    <a href="${pageContext.request.contextPath}/contactUs/selectUs1"> 人才战略</a>
+                    <a href="${pageContext.request.contextPath}/message2/pagingMessageNum7.action"> 招聘信息</a>
+                </li>
+                <li class="c-about4"><i></i>&nbsp;&nbsp;联系我们</li>
+                <li class="c-about5">
+                    <p class="c-2p1">攀枝花城市投资建设(集团)有限公司</p>
+                    <p>地址：攀枝花市东区炳仁路独松树梁子隧道监控大楼</p>
+                    <p>电话：0812-3359696</p>
+                    <p>传真：0812-3359678</p>
+                    <p>邮箱：2502713223@qq.com</p>
+                </li>
+                <li class="c-about6">
+                    <img src="${pageContext.request.contextPath}/image/3.png" alt="" />
+                </li>
+            </ul>
+            <div class="c-jianjie">
+                <div class="c-jiantop clearfloat">
+                <div class="c-jiantop c-jiantop8 clearfloat">
+                    <h6 class="f_l">招聘信息</h6>
+                    <p class="f_r">
+                        您当前位置:&nbsp;&nbsp;<a href="">网站首页></a>
+                        <a href="">招聘信息</a>
+                    </p>
+                </div>
+                <div class="c-xinwen7">
+                    <div class="cxw7">
+                        <p style="height:50px; width:100%"></p>
+
+                        <tr th:each="messages:${message}">
+                            <td th:text="${messages.id}"></td>
+                            <td th:text="${messages.title}"></td>
+                            <td th:text="${messages.time}"></td>
+                        </tr>
+
+                    </div>
+                </div>
+                  <section class="footerw3-top">
+                 
+
+        
+
+    </div>
+    <div id="foot" class="w100">
+        <div class="dabox c-textc2">版权所有©攀枝花城市投资建设(集团)有限公司 <i class="f-i2 f-i"></i> 川公网安备 51040202000155号</div>
+    </div>
+</body>
+<script src="${pageContext.request.contextPath}/js/rem.js"></script>
+<script src="${pageContext.request.contextPath}/js/js.js"></script>
+
+</html>
